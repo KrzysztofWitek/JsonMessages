@@ -1,3 +1,10 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+index:
+  path: /
+  controller: App\Controller\Page\ShowIndexPageAction
+
+404Redirect:
+  path: /{all}
+  controller: App\Controller\Page\ShowIndexPageAction
+  methods: GET
+  requirements:
+    all: .*
