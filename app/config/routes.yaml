@@ -2,11 +2,25 @@ index:
   path: /
   controller: App\Controller\Page\ShowIndexPageAction
 
+# create
 create_message:
   path: /api/message
   controller: App\Controller\Message\CreateNewMessageAction
   methods: POST
 
+# get one message by uuid
+get_message:
+  path: /api/message/{uuid}
+  controller: App\Controller\Message\GetMessageAction
+  methods: GET
+
+# get messages by time or all
+get_messages:
+  path: /api/messages
+  controller: App\Controller\Message\GetMessagesAction
+  methods: GET
+
+# for every another route, show index
 404Redirect:
   path: /{all}
   controller: App\Controller\Page\ShowIndexPageAction
