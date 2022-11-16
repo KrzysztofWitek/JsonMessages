@@ -2,6 +2,11 @@ index:
   path: /
   controller: App\Controller\Page\ShowIndexPageAction
 
+create_message:
+  path: /api/message
+  controller: App\Controller\Message\CreateNewMessageAction
+  methods: POST
+
 404Redirect:
   path: /{all}
   controller: App\Controller\Page\ShowIndexPageAction
