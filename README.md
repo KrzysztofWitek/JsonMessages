@@ -3,7 +3,7 @@
 ### Project for recruitment purposes
 
 ### setup project
-```make docker_up```
+```make docker_up_v1``` or ```make docker_up_v2```
 
 ```composer install```
 

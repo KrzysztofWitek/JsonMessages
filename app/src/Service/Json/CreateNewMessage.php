@@ -31,7 +31,7 @@ class CreateNewMessage
 
         $newMessage = [
             'uuid' => $uuid,
-            'timestamp' => date('Y-d-m H:s:i'),
+            'timestamp' => date('Y-m-d H:s:i'),
             'message' => $message
         ];
 
@@ -43,6 +43,6 @@ class CreateNewMessage
             return false;
         }
 
-        return [ 'message' => 'success', 'uuid' => $uuid ];
+        return ['data' => $newMessage, 'code' => 201];
     }
 }
